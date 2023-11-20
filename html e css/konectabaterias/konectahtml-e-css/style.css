@@ -467,7 +467,8 @@ nav ul a:hover::after{
 .baterias-noventa .container,
 .baterias-centoedez .container,
 .baterias-centoecinquenta .container,
-.baterias-centoeoitenta .container{
+.baterias-centoeoitenta .container,
+.baterias-estacionarias .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -483,7 +484,8 @@ nav ul a:hover::after{
 .baterias-noventa .baterias-noventa-text,
 .baterias-centoedez .baterias-centoedez-text,
 .baterias-centoecinquenta .baterias-centoecinquenta-text,
-.baterias-centoeoitenta .baterias-centoeoitenta-text{
+.baterias-centoeoitenta .baterias-centoeoitenta-text,
+.baterias-estacionarias .baterias-estacionarias-text{
     width: 50%;
     padding-right: 48px;
 }
@@ -493,7 +495,8 @@ nav ul a:hover::after{
 .baterias-noventa .baterias-noventa-text p,
 .baterias-centoedez .baterias-centoedez-text p,
 .baterias-centoecinquenta .baterias-centoecinquenta-text p,
-.baterias-centoeoitenta .baterias-centoeoitenta-text p{
+.baterias-centoeoitenta .baterias-centoeoitenta-text p,
+.baterias-estacionarias .baterias-estacionarias-text p{
     margin: 18px 0;
     color: #000000a6;
 }
@@ -503,7 +506,8 @@ nav ul a:hover::after{
 .baterias-noventa .baterias-noventa-img,
 .baterias-centoedez .baterias-centoedez-img,
 .baterias-centoecinquenta .baterias-centoecinquenta-img,
-.baterias-centoeoitenta .baterias-centoeoitenta-img{
+.baterias-centoeoitenta .baterias-centoeoitenta-img,
+.baterias-estacionarias .baterias-estacionarias-img{
     width: 50%;
     
 }
@@ -513,7 +517,8 @@ nav ul a:hover::after{
 .baterias-noventa .baterias-noventa-img img,
 .baterias-centoedez .baterias-centoedez-img img,
 .baterias-centoecinquenta .baterias-centoecinquenta-img img,
-.baterias-centoeoitenta .baterias-centoeoitenta-img img{
+.baterias-centoeoitenta .baterias-centoeoitenta-img img,
+.baterias-estacionarias .baterias-estacionarias-img img{
     width: 80%;
     height: 80%;
     display: flex;
@@ -658,7 +663,9 @@ nav .fechar-icon{
     .baterias-centoecinquenta .baterias-centoecinquenta-img,
     .baterias-centoecinquenta .baterias-centoecinquenta-text,
     .baterias-centoeoitenta .baterias-centoeoitenta-img,
-    .baterias-centoeoitenta .baterias-centoeoitenta-text{
+    .baterias-centoeoitenta .baterias-centoeoitenta-text,
+    .baterias-estacionarias .baterias-estacionarias-img,
+    .baterias-estacionarias .baterias-estacionarias-text{
         width: 100%;
         padding-right: 0;
     }
@@ -668,7 +675,8 @@ nav .fechar-icon{
     .baterias-noventa .baterias-noventa-text,
     .baterias-centoedez .baterias-centoedez-text,
     .baterias-centoecinquenta .baterias-centoecinquenta-text,
-    .baterias-centoeoitenta .baterias-centoeoitenta-text{
+    .baterias-centoeoitenta .baterias-centoeoitenta-text,
+    .baterias-estacionarias .baterias-estacionarias-text{
         margin-top: 40px;
     }
 
@@ -677,7 +685,8 @@ nav .fechar-icon{
     .baterias-noventa .baterias-noventa-img img,
     .baterias-centoedez .baterias-centoedez-img img,
     .baterias-centoecinquenta .baterias-centoecinquenta-img img,
-    .baterias-centoeoitenta .baterias-centoeoitenta-img img{
+    .baterias-centoeoitenta .baterias-centoeoitenta-img img,
+    .baterias-estacionarias .baterias-estacionarias-img img{
         width: 100%;
     }
     .baterias-quarentaeoito .container,
@@ -685,10 +694,11 @@ nav .fechar-icon{
     .baterias-noventa .container,
     .baterias-centoedez .container,
     .baterias-centoecinquenta .container,
-    .baterias-centoeoitenta .container{
+    .baterias-centoeoitenta .container,
+    .baterias-estacionarias .container{
         flex-direction: column;
     }
-    /*FIM PAGINA BATERIAS RESPONSIVO*/
+    /*FIM PAGINA BATERIASestacionarias
 
 
 }
