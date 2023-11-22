@@ -11,6 +11,8 @@
 
 }
 
+
+
 body {
     background-color: #6e6d6d31;
 }
@@ -181,7 +183,8 @@ nav ul a:hover::after{
 
 .textos p { /*paragrafo depoimentos*/
     color: #e99403;
-    text-shadow: 2px 1px 4px rgba(231, 148, 4, 0.510)
+    text-shadow: 2px 1px 4px rgba(231, 148, 4, 0.510);
+    padding: 5px;
 }
 
 .depoimentos .avaliacoes-item p{ /*paragrafos dos depoimentos*/
@@ -258,6 +261,9 @@ nav ul a:hover::after{
 }
 
 /*PARCERIAS*/
+.parcerias .textos p{
+    padding: 5px;
+}
 .parcerias h3,
 .parcerias p{
     text-align: center;
@@ -420,43 +426,8 @@ nav ul a:hover::after{
     color: white;
 }
 
-/*formulario*/
-.contato-info .right-side{
-    width: 50%;
-}
-
-.contato-info .right-side input{
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    height: 47px;
-    padding: 15px;
-    border-radius: 9px;
-    transition: 0.3s;
-    border: 1px solid #f1f1f1;
-    color: #212121;
-    font-weight: lighter;
-}
-
-.contato-info .right-side input:focus,
-.contato-info .right-side textarea:focus{ /*focus é quando eu clicar na caixa de digitação */
-    border-color: #f9c34f;
-}
-
-.contato-info .right-side textarea{
-    border: 1px solid #f1f1f1;
-    color: #212121;
-    border-radius: 9px;
-    margin-bottom: 10px;
-    padding: 15px;
-    width: 100%;
-    transition: 0.3s;
-    resize: none; /*usuario nao pode alterar o tamnho da caixa de texto*/
-}
-
-.contato-info .right-side button{
-    border: none;
-
+.contato-info .left-side p:hover{
+    text-decoration: underline;
 }
 
 /*FINALPAGINA CONTATO*/
@@ -599,6 +570,8 @@ nav .fechar-icon{
     }
 
     /*BANNER RESPONSIVO*/
+    
+
     .banner .banner-text{
         padding: 0;
         margin: 80px;
@@ -645,9 +618,7 @@ nav .fechar-icon{
         width: 100%;
     }
 
-    .contato-info .right-side{
-        margin-top: 40px;
-    }
+
 
     /*PAGINA BATERIAS RESPONSIVO*/
    
@@ -698,7 +669,7 @@ nav .fechar-icon{
     .baterias-estacionarias .container{
         flex-direction: column;
     }
-    /*FIM PAGINA BATERIASestacionarias
+    /*FIM PAGINA BATERIASestacionarias*/
 
 
 }
@@ -711,6 +682,20 @@ nav .fechar-icon{
 
     .frases .frases-text h3{
         font-size: 40px;
+    }
+    /*FRASES PARA TELAS DE 500px*/
+    .frases .container .frases-text h3{
+        font-size: 35px;
+    }
+    .frases .container .frases-text p{
+        font-size: 20px;
+    }
+    /*DEPOIMENTOS PARA TELAS DE 500px*/
+    .depoimentos .textos h3{
+        font-size: 35px;
+    }
+    .depoimentos .textos p{
+        font-size: 20px;
     }
 }
 
