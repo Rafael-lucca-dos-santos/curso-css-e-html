@@ -436,6 +436,7 @@ nav ul a:hover::after{
 /*FINALPAGINA CONTATO*/
 
 /*PAGINA BATERIAS QUARENTA E OITO*/
+.baterias-moto .container,
 .baterias-quarentaecinco .container,
 .baterias-quarentaeoito .container,
 .baterias-sessenta .container,
@@ -453,6 +454,7 @@ nav ul a:hover::after{
 .banner .banner-text h1{
     text-shadow: 1px 1px 8px black;
 }
+.baterias-moto .baterias-moto-text,
 .baterias-quarentaecinco .baterias-quarentaecinco-text,
 .baterias-quarentaeoito .baterias-quarentaeoito-text,
 .baterias-sessenta .baterias-sessenta-text,
@@ -464,6 +466,7 @@ nav ul a:hover::after{
     width: 50%;
     padding-right: 48px;
 }
+.baterias-moto .baterias-moto-text p,
 .baterias-quarentaecinco .baterias-quarentaecinco-text p,
 .baterias-quarentaeoito .baterias-quarentaeoito-text p,
 .baterias-sessenta .baterias-sessenta-text p,
@@ -474,6 +477,11 @@ nav ul a:hover::after{
 .baterias-estacionarias .baterias-estacionarias-text p{
     margin: 18px 0;
     color: #000000a6;
+}
+
+.baterias-moto .baterias-moto-img{
+    width: 30%;
+   
 }
 .baterias-quarentaecinco .baterias-quarentaecinco-img,
 .baterias-quarentaeoito .baterias-quarentaeoito-img,
@@ -486,6 +494,7 @@ nav ul a:hover::after{
     width: 50%;
     
 }
+.baterias-moto .baterias-moto-img img,
 .baterias-quarentaecinco .baterias-quarentaecinco-img img,
 .baterias-quarentaeoito .baterias-quarentaeoito-img img,
 .baterias-sessenta .baterias-sessenta-img img,
@@ -625,7 +634,8 @@ nav .fechar-icon{
 
 
     /*PAGINA BATERIAS RESPONSIVO*/
-   
+    .baterias-moto .baterias-moto-img,
+    .baterias-moto .baterias-moto-text,
     .baterias-quarentaecinco .baterias-quarentaecinco-img,
     .baterias-quarentaecinco .baterias-quarentaecinco-text,
     .baterias-quarentaeoito .baterias-quarentaeoito-img,
@@ -645,6 +655,7 @@ nav .fechar-icon{
         width: 100%;
         padding-right: 0;
     }
+    .baterias-moto .baterias-moto-text,
     .baterias-quarentaecinco .baterias-quarentaecinco-text,
     .baterias-quarentaeoito .baterias-quarentaeoito-text,
     .baterias-sessenta .baterias-sessenta-text,
@@ -655,6 +666,7 @@ nav .fechar-icon{
     .baterias-estacionarias .baterias-estacionarias-text{
         margin-top: 40px;
     }
+    .baterias-moto .baterias-moto-img img,
     .baterias-quarentaecinco .baterias-quarentaecinco-img img,
     .baterias-quarentaeoito .baterias-quarentaeoito-img img,
     .baterias-sessenta .baterias-sessenta-img img,
@@ -665,6 +677,7 @@ nav .fechar-icon{
     .baterias-estacionarias .baterias-estacionarias-img img{
         width: 100%;
     }
+    .baterias-moto .container,
     .baterias-quarentaecinco .container,
     .baterias-quarentaeoito .container,
     .baterias-sessenta .container,
