@@ -11,15 +11,17 @@
 
 }
 
-
-
 body {
     background-color: #6e6d6d31;
 }
 
 
-section,footer {
+section{
     padding: 54px 0;
+}
+
+footer{
+    padding: 10px;
 }
 
 h3{
@@ -189,6 +191,7 @@ nav ul a:hover::after{
 
 .depoimentos .avaliacoes-item p{ /*paragrafos dos depoimentos*/
     color: #4f9cf9;
+    padding-top: 50px;
 }
 
 .depoimentos p {
