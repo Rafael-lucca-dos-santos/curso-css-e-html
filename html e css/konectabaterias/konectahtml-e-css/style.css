@@ -38,7 +38,8 @@ p{
     padding: 0 5%;
 }
 
-.btn {
+.btn,
+.btn-animate {
     background-color: #eba01f;
     color: white;
     padding: 15px 20px;
@@ -47,6 +48,7 @@ p{
     display: inline-block;
     transition: 0.2s;
     margin: 15px 0;
+    box-shadow: 1px 1px 5px #252525a4;
 }
 
 
@@ -54,11 +56,24 @@ p{
     background-color: #a36802;
 }
 
+.btn-animate{
+    animation: animate-outline 0.85s ease-out infinite;
+}
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #eba01f;
+    }
+    to{
+        outline: 15px solid #eba01f28;
+    }
+}
+
 header{
     background-position: center left; /*deixa o foco imagem no centro */
     background-size: cover; /*para a imagem ocupar toda a largura e altura do header */
     background-attachment: fixed; /*faz o efeito paralax funcionar*/
-    height: 1050px;
+    height: 700px;
 }
 
 nav {
@@ -106,14 +121,14 @@ nav ul a:hover::after{
 }
 
 .banner .banner-text{
-    margin: 150px;
+    margin: 50px 10px 50px 10px;
     text-align: center;
     padding: 0 90px;
 }
 
 .banner .banner-text h1 { /*titulo do header*/
     font-size: 140px;
-    color: #eba01f;
+    color: #eba01f; 
 }
 
 .banner .banner-text p{ /*paragrafo do header*/
@@ -122,6 +137,7 @@ nav ul a:hover::after{
     font-weight: lighter;
     margin: 18px;
 }
+
 
 .banner .banner-text .btn:hover{ /*botao do header*/
     margin: 0.1px;
@@ -142,14 +158,14 @@ nav ul a:hover::after{
 }
 
 .frases .frases-text h3{ /*titulo das frases*/
-    font-size: 46px;
+    font-size: 2.7vw;
     color: #e99403;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.600);
 }
 
 .frases .frases-text p { /*paragrafo das frases*/
     margin: 5px 0 10px 0;
-    font-size: 22px;
+    font-size: 1.4em;
     color: black;
 }
 
@@ -160,7 +176,7 @@ nav ul a:hover::after{
 .frases .frases-img img { /*imagem das frases 1 e 3*/
     width: 100%;
     border-radius: 40px 2px 40px 2px;
-    box-shadow: 4px 2px 12px black;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.700);
 }
 
 .frases .frases-img-2 { /*imagem da frase 2*/
@@ -170,7 +186,7 @@ nav ul a:hover::after{
 .frases .frases-img-2 img { /*imagem da frase 2*/
     width: 100%;
     border-radius: 2px 40px 2px 40px;
-    box-shadow: 4px 2px 12px black;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.700);
 }
 
 /*DEPOIMENTOS*/
@@ -359,8 +375,7 @@ nav ul a:hover::after{
 }
 
 .sobre .sobre-text{
-    width: 50%;
-    padding-right: 48px;
+    width: 50%;   
 }
 
 .sobre .sobre-text p{
@@ -370,7 +385,7 @@ nav ul a:hover::after{
 
 .sobre .sobre-img{
     width: 50%;
-    
+    padding-left: 13px;
 }
 
 .sobre .sobre-img img{
@@ -395,7 +410,7 @@ nav ul a:hover::after{
 }
 
 .banner .banner-text p{
-    font-size: 19px;
+    font-size: 1.3vw;
 }
 .contato-info{
     display: flex;
@@ -435,7 +450,7 @@ nav ul a:hover::after{
 
 /*FINALPAGINA CONTATO*/
 
-/*PAGINA BATERIAS QUARENTA E OITO*/
+/*PAGINA BATERIAS*/
 .baterias-moto .container,
 .baterias-quarentaecinco .container,
 .baterias-quarentaeoito .container,
@@ -477,6 +492,7 @@ nav ul a:hover::after{
 .baterias-estacionarias .baterias-estacionarias-text p{
     margin: 18px 0;
     color: #000000a6;
+    font-size: 18px;
 }
 
 .baterias-moto .baterias-moto-img{
@@ -510,6 +526,8 @@ nav ul a:hover::after{
     margin-right: auto;
     }
 
+/*FINAL PAGINA BATERIAS*/
+
 
 /*MENU CELULAR*/
 
@@ -528,7 +546,7 @@ nav .fechar-icon{
 
 
 
-@media (max-width: 800px){
+@media (max-width: 910px){
     .ul{
         position: fixed;
         top: 0;
@@ -561,7 +579,10 @@ nav .fechar-icon{
         top: 46px;
         right: 28px;
     }
+
+
     /*PAGINA HOME RESPONSIVA*/
+
     .frases .frases-text{
         margin-top: 10px;
         padding: 0 20px;
@@ -584,6 +605,9 @@ nav .fechar-icon{
 
     /*BANNER RESPONSIVO*/
     
+    header{
+        height: 530px;
+    }
 
     .banner .banner-text{
         padding: 0;
@@ -612,6 +636,10 @@ nav .fechar-icon{
         flex-direction: column;
     }
 
+    .banner .banner-text {
+        margin: 0px;
+    }
+
     .sobre .sobre-img,
     .sobre .sobre-text{
         width: 100%;
@@ -634,6 +662,7 @@ nav .fechar-icon{
 
 
     /*PAGINA BATERIAS RESPONSIVO*/
+
     .baterias-moto .baterias-moto-img,
     .baterias-moto .baterias-moto-text,
     .baterias-quarentaecinco .baterias-quarentaecinco-img,
@@ -688,27 +717,46 @@ nav .fechar-icon{
     .baterias-estacionarias .container{
         flex-direction: column;
     }
-    /*FIM PAGINA BATERIASestacionarias*/
-
-
 }
 
-@media (max-width:500px) {
+@media (max-width:568px){
+
+    .baterias-estacionarias .baterias-estacionarias-text h3,
+    .sobre .sobre-text h3{
+        font-size: 12vw;
+    }
+
+    .baterias-estacionarias .baterias-estacionarias-text p,
+    .sobre .sobre-text p{
+        font-size: 5vw;
+    }
     
     .banner .banner-text h1{
-        font-size: 50px;
+        max-width: 100%;
+        font-size: 12vw;
+    }
+
+    .banner .banner-text p{
+        max-width: 100%;
+        font-size: 5vw;
     }
 
     .frases .frases-text h3{
         font-size: 40px;
     }
+
+
+    
     /*FRASES PARA TELAS DE 500px*/
+
+    
     .frases .container .frases-text h3{
         font-size: 35px;
     }
     .frases .container .frases-text p{
         font-size: 20px;
     }
+
     /*DEPOIMENTOS PARA TELAS DE 500px*/
     .depoimentos .textos h3{
         font-size: 35px;
@@ -719,4 +767,3 @@ nav .fechar-icon{
 }
 
 /*FIM MENU CELULAR*/
-
